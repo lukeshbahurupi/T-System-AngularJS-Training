@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Kart🎁</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./app.js"></script>
+    
+</head>
+<body ng-app="transflower" ng-controller="LoginController">
+    <div>
+        <h1>TFL Store</h1>
+        <ol>
+            <li>Gerbera</li>
+            <li>Rose</li>
+            <li>Lotus</li>
+        </ol>
+    </div>
+<form ng-submit="Validate()">
+   <table>    
+        <tr>
+            <td><label for="">Email</label></td>
+            <td><input type="email" name="email" id="email" ng-model="user.email"></td>
+        </tr>
+        <tr>
+            <td>password</td>
+            <td><input type="password" id="password"name="password" ng-model="user.password"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" name="login"></td>    
+        </tr>
+    
+   </table> 
+</form>
+</body>
+</html>

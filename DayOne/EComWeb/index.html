@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>TFL Store</h1>
+        <ol>
+            <li>Gerbera</li>
+            <li>Rose</li>
+            <li>Lotus</li>
+        </ol>
+    </div>
+   <div>
+    <div>
+        <tr>
+        <td><label for="">Email</label></td>
+        <td><input type="email" name="email" id="email"></td>
+        </tr>
+    </div>
+    <div>
+        <tr>
+            <td>password</td>
+            <td><input type="password" id="password"name="password"></td>
+        </tr>
+    </div>
+   <tr>
+    <td></td><td><button onclick="Validate()" type="button" name="Login" id="login">Login</button></td>    
+   </tr>
+   </div>
+   <script>
+    let Validate = () =>{
+        let Id = document.getElementById('email').value;
+        let password = document.getElementById("password").value;
+        if(Id === "lukesh@test.com" && password === "123@test"){
+            alert("welcom Lukesh");
+        }
+        else{
+            alert("Sorry! wrong user.");
+        }
+    }
+    
+   </script>
+</body>
+</html>
