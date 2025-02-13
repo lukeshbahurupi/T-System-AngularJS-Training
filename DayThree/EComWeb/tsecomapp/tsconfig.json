@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "target": "ES5",
+      "module": "ES6",
+      "moduleResolution": "node",
+      "outDir": "./dist/out-tsc",
+      "esModuleInterop": true,
+      "strict": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "noEmitOnError": true
+    },
+    "include": [
+      "src/**/*.ts"
+    ],
+    "exclude": [
+      "node_modules"
+    ]
+  }

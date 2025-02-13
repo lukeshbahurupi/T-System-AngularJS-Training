@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js"></script> -->
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <script src="./angular.min.js"></script>
+    <script src="./angular-route.min.js"></script>
+    <script src="./src/app.js"></script>
+    <script src="./dist/out-tsc/controller/app.controller.js"></script>
+    <script src="./dist/out-tsc/controller/login.controller.js"></script>
+    <script src="./dist/out-tsc/controller/product.controller.js"></script>
+    <script src="./dist/out-tsc/modules/login.module.js"></script>
+    <script src="./dist/out-tsc/modules/product.module.js"></script>
+    <script src="./dist/out-tsc/modules/app.module.js"></script>
+</head>
+<body >
+
+
+
+
+
+    <h1>Transflower Viewer</h1>
+    <!-- <a href="#!/cart">cart</a>|<a href="#!/auth">auth</a>|<a href="#!/product">product</a> -->
+    <div ng-view></div>
+
+
+
+
+
+
+
+
+
+    <!-- <div ng-controller="loginController as vm">
+        <form ng-submit="vm.validate()">
+            <table>    
+                 <tr>
+                     <td><label for="">Email</label></td>
+                     <td><input type="email" name="email" id="email" ng-model="vm.user.email"></td>
+                 </tr>
+                 <tr>
+                     <td>password</td>
+                     <td><input type="password" id="password" name="password" ng-model="vm.user.password"></td>
+                 </tr>
+                 <tr>
+                     <td></td>
+                     <td><input type="submit" name="login"></td>    
+                 </tr>
+             
+            </table> 
+    </div>
+
+    <div ng-controller="productController as vm">
+        <h1>Products</h1>    
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="product in vm.products">
+                    <td>{{product.name}}</td>
+                    <td>{{product.description}}</td>
+                </tr>
+            </tbody>
+        </table>            
+    </div> -->
+</body>
+</html>

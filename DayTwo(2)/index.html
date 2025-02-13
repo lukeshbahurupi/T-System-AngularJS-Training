@@ -9,9 +9,29 @@
     <script src="./app.js"></script>
     
 </head>
-<body ng-app="transflower" ng-controller="LoginController">
-    <div>
+<body ng-app="transflower" >
+    
+        <div ng-controller="ProductController">
+            <h1>Products</h1>    
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="product in products">
+                        <td>{{product.name}}</td>
+                        <td>{{product.description}}</td>
+                    </tr>
+                </tbody>
+            </table>            
+        </div>
+    <div ng-controller="LoginController">
+        <div>
         <h1>TFL Store</h1>
+        
         <ol>
             <li>Gerbera</li>
             <li>Rose</li>
@@ -38,5 +58,6 @@
     
    </table> 
 </form>
+</div>
 </body>
 </html>

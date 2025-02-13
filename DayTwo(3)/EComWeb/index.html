@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Kart🎁</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <script src="./modules/app.js"></script>
+    <script src="./modules/authModule.js"></script>
+    <script src="./modules/productModule.js"></script>
+    <script src="./controller/login.controller.js"></script>
+    <script src="./controller/products.controller.js"></script>
+    
+</head>
+<body   ng-app="transflower">
+    <!-- -->
+        <div  ng-controller="ProductController">
+            <h1>Products</h1>    
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="product in products">
+                        <td>{{product.name}}</td>
+                        <td>{{product.description}}</td>
+                    </tr>
+                </tbody>
+            </table>            
+        </div>
+<div  ng-controller="LoginController">
+    <div>
+        <h1>TFL Store</h1>
+        
+        <ol>
+            <li>Gerbera</li>
+            <li>Rose</li>
+            <li>Lotus</li>
+        </ol>
+    </div>
+    <ol>
+        <li ng-repeat="user in users">{{user.email}}--{{user.password}}</li>
+    </ol>
+<form ng-submit="Validate()">
+   <table>    
+        <tr>
+            <td><label for="">Email</label></td>
+            <td><input type="email" name="email" id="email" ng-model="user.email"></td>
+        </tr>
+        <tr>
+            <td>password</td>
+            <td><input type="password" id="password" name="password" ng-model="user.password"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" name="login"></td>    
+        </tr>
+    
+   </table> 
+</form>
+</div>
+</body>
+</html>

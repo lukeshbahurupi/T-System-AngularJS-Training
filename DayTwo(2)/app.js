@@ -2,8 +2,8 @@ var app = angular.module("transflower",[]);
 app.controller("LoginController",($scope)=>{
     //model
     $scope.user={
-        email:"lukesh@test.com",
-        pasword: "123@test"
+        email:"",
+        pasword: ""
     }
     $scope.users=[
         { email: "lukesh@test.com", password: "123@test" },
@@ -20,4 +20,16 @@ app.controller("LoginController",($scope)=>{
             alert('invalide user!');
         }
     }
+})
+
+app.controller("ProductController",($scope)=>{
+   
+
+    $scope.products=[        
+            { name: "Rose", description: "Red Flower" },
+            { name: "Tulip", description: "Bright Colored Flower" },
+            { name: "Lily", description: "White Elegant Flower" },
+            { name: "Daisy", description: "Simple White Flower" },
+            { name: "Sunflower", description: "Large Yellow Flower" }
+    ];
 })

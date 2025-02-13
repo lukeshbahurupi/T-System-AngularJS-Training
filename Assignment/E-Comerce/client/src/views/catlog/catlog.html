@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/angular.min.js"></script>
+    <script src="../../../dist/out-tsc/catlog/controller/catlog.controller.js"></script>
+    <script src="../../../dist/out-tsc/catlog/catlog.module.js"></script>
+    <title>Document</title>
+</head>
+<body ng-app="catlogModule">
+    <div  ng-controller="catlogController as ctlg">
+        <h1>Products</h1>    
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="product in ctlg.products">
+                    <td>{{product.name}}</td>
+                    <td>{{product.description}}</td>
+                </tr>
+            </tbody>
+        </table>            
+    </div>
+</body>
+</html>
