@@ -1,0 +1,16 @@
+Create Angular Application Folder
+Use npm init command to create package.json file
+Install typescript
+Install angular@1.6.4 and @types/angular@1.6.4 for angular typescript compilation
+Create index.html file at root folder level
+Add new file ts.config.json file.
+Create folder structure for angularjs controllers and modules ( src and dist ).
+Create app.module.ts and respective controller files
+Download angular min js of v1.6.4
+Implement angular application using typescript.
+Use angular directives inside index.html file.
+Add npm build command of tsc in package.json
+Use npm run build command to generate js files from ts
+Link js files in index.html
+Remove export and import statements from js files inside dist
+Launch html using live server
