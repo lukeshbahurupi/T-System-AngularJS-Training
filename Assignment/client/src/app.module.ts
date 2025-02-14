@@ -1,6 +1,6 @@
 import * as angular from "angular";
 
-angular.module("myApp",["catlogModule","authModule"])
+angular.module("myApp",["ngRoute","catlogModule","authModule"])
 .config(($routeProvider: any) => {
     $routeProvider
       .when("/catlog", {

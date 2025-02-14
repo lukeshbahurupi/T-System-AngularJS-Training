@@ -1,4 +1,4 @@
-angular.module("myApp", ["catlogModule" ])
+angular.module("myApp", ["ngRoute", "catlogModule", "authModule"])
     .config(function ($routeProvider) {
     $routeProvider
         .when("/catlog", {

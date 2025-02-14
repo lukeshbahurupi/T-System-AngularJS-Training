@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document</title>  
     <script src="./angular.min.js"></script>
     <script src="./angular-route.min.js"></script>
     <!-- <script src="./src/app.js"></script> -->
     <script src="./dist/out-tsc/catlog/controller/catlog.controller.js"></script>
-    <!-- <script src="./dist/out-tsc/auth/controller/auth.controller.js"></script> -->
+    <script src="./dist/out-tsc/auth/controller/auth.controller.js"></script>
+    <script src="./dist/out-tsc/app.controller.js"></script>
+    <script src="./dist/out-tsc/custom.directive.js"></script>
+    <script src="./dist/out-tsc/catlog/catlog.services.js"></script>
     <script src="./dist/out-tsc/catlog/catlog.module.js"></script>
-    <!-- <script src="./dist/out-tsc/auth/auth.module.js"></script> -->
+    <script src="./dist/out-tsc/auth/auth.module.js"></script>
     <script src="./dist/out-tsc/app.module.js"></script>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body ng-app="myApp">   
     <div ng-view></div>
+    <my-directive></my-directive>
 </body>
 </html>

@@ -1,15 +1,17 @@
 var catlogController = /** @class */ (function () {
-    function catlogController($scope) {
+    function catlogController($scope, CatlogService) {
+        var _this = this;
         this.$scope = $scope;
-        this.products = [
-            { name: "Rose", description: "Red Flower" },
-            { name: "Tulip", description: "Bright Colored Flower" },
-            { name: "Lily", description: "White Elegant Flower" },
-            { name: "Daisy", description: "Simple White Flower" },
-            { name: "Sunflower", description: "Large Yellow Flower" }
-        ];
+        this.CatlogService = CatlogService;
+        this.products = [];
+        this.CatlogService.getCatlogs().then(function (response) {
+            _this.products = response;
+        }, function (error) {
+            console.error('Error fetching products:', error);
+        });
+        console.log(this.products);
         $scope['vm'] = this;
     }
-    catlogController.$inject = ['$scope'];
+    catlogController.$inject = ['$scope', 'CatlogService'];
     return catlogController;
 }());

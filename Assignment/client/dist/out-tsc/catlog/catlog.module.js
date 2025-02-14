@@ -1,1 +1,2 @@
-angular.module("catlogModule", []).controller("catlogController", catlogController);
+
+angular.module("catlogModule", []).controller("catlogController", catlogController).service("CatlogService", CatlogService);
