@@ -1,0 +1,19 @@
+<div class="container my-4">
+    <div class="row">
+        <div class="col-md-4" ng-repeat="product in vm.products">
+            <div class="card" style="width: 18rem;">
+                <img ng-src="{{product.image}}" class="card-img-top" alt="{{product.title}}" style="height: 200px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">{{product.title}}</h5>
+                    <p class="card-text">{{product.description}}</p>
+                    <p class="card-text"><strong>Price: </strong>{{product.price | currency}}</p>
+                    <p class="card-text"><strong>Category: </strong>{{product.category}}</p>
+                    <p class="card-text"><strong>Rating: </strong>{{product.rating.rate}} ({{product.rating.count}} reviews)</p>
+                    <a href="#" class="btn btn-primary btn-sm">View Details</a>
+                    <button class="btn btn-success btn-sm ml-2">Add to Cart</button>
+                    <button class="btn btn-warning btn-sm ml-2">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
